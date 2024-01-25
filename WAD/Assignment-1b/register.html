@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <form class="register-form">
+            <h2>Login</h2>
+            <label for="ID">ID:</label>
+            <input type="text" id="ID" name="ID" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="option1">Pune</option>
+                <option value="option2">Mumbai</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <div class="form-group">
+                <label for="state">State:</label>
+                <select id="state" name="state" required>
+                    <option value="state1">Maharashtra</option>
+                    <option value="state2">other</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+            <button type="button" onclick="submitRegistration()">Submit</button>
+            <button type="button" onclick="cancelRegistration()">Cancel</button>
+        </form>
+       <!-- ... (existing HTML code) ... -->
+<div id="dataListContainer" style="display:none;">
+    <h2>Registered Users</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- User data will be dynamically added here using JavaScript -->
+        </tbody>
+    </table>
+</div>
+<!-- ... (existing HTML code) ... -->
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="register.js"></script>
+    <script src="data-list.js"></script>
+</body>
+</html>
+        
